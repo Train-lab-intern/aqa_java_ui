@@ -3,7 +3,6 @@ package com.trainlab.app.pages;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class HomePage extends BasePage {
@@ -29,5 +28,21 @@ public class HomePage extends BasePage {
 
     public String getTextAboutUsBtn() {
         return aboutUsBtn.getText();
+    }
+
+    public boolean tasksBtnIsDisplayed() {
+        return tasksBtn.isDisplayed();
+    }
+
+    public String getTextTasksBtn() {
+        return tasksBtn.getText();
+    }
+
+    public boolean signInBtnIsDisplayed() {
+        return signInBtn.isDisplayed();
+    }
+
+    public String getTextSignInBtn() {
+        return signInBtn.getText();
     }
 }
