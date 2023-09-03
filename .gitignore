@@ -20,6 +20,7 @@ release.properties
 
 # User-specific stuff
 .idea/
+.allure/
 
 # File-based project format
 *.iws
