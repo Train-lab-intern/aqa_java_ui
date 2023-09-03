@@ -15,7 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Selenide version-->
-        <selenide.version>6.12.3</selenide.version>
+        <selenide.version>6.17.2</selenide.version>
 
         <!-- JUnit4 version-->
         <junit.version>4.13.2</junit.version>
