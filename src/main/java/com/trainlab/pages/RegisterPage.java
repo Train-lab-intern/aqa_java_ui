@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
 
-public class RegisterPage extends AbstractPage {
+public class RegisterPage extends BasePage {
 
     private static final SelenideElement fieldEmail = $(By.className("email"));
     private static final SelenideElement fieldUserName = $(By.className("username"));

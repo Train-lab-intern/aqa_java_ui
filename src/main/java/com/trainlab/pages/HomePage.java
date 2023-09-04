@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
 
-public class HomePage extends AbstractPage {
+public class HomePage extends BasePage {
 
     private static final SelenideElement signInButton = $(By.xpath("//button[contains(text(),'Войти')]"));
     private static final SelenideElement startButton = $(By.xpath("////button[contains(text(),'Начать путь')]']"));
