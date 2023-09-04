@@ -7,12 +7,17 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class UserDataGenerator {
 
     private String email;
     private String userName;
     private String password;
 
+    public UserDataGenerator() {
+        this.email = "subbotin1200@gmail.com";
+        this.userName = "subbotin1200";
+        this.password = "qqqqqqQ1";
+    }
 }

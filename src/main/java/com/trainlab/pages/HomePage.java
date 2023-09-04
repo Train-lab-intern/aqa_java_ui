@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.page;
 public class HomePage extends BasePage {
 
     private static final SelenideElement signInButton = $(By.xpath("//button[contains(text(),'Войти')]"));
-    private static final SelenideElement startButton = $(By.xpath("////button[contains(text(),'Начать путь')]']"));
+    private static final SelenideElement startButton = $(By.xpath("//button[contains(text(),'Начать путь')]"));
 
-    private RegisterPage clickStartButton() {
+    public RegisterPage clickStartButton() {
         startButton.click();
 
         registerPage = page(RegisterPage.class);
