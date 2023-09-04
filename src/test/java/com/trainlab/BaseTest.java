@@ -1,4 +1,4 @@
-package com.itRoast.web;
+package com.trainlab;
 
 public class BaseTest {
 }

@@ -1,4 +1,4 @@
-package com.itRoast.pages;
+package com.trainlab.pages;
 
 public class AbstractPage {
 }
