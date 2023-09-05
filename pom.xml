@@ -35,6 +35,9 @@
         <!-- Aspectj version-->
         <aspectj.version>1.8.10</aspectj.version>
 
+        <!-- CommonsIO version-->
+        <commonsIO.version>2.11.0</commonsIO.version>
+
     </properties>
 
     <dependencies>
@@ -69,6 +72,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commonsIO.version}</version>
         </dependency>
     </dependencies>
 

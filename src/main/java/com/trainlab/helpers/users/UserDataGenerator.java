@@ -1,4 +1,4 @@
-package com.trainlab.helpers;
+package com.trainlab.helpers.users;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

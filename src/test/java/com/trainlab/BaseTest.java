@@ -1,8 +1,7 @@
 package com.trainlab;
 
 import com.codeborne.selenide.Selenide;
-import com.trainlab.pages.HomePage;
-import com.trainlab.pages.RegisterPage;
+import com.trainlab.app.pages.HomePage;
 
 import static com.codeborne.selenide.Selenide.page;
 
