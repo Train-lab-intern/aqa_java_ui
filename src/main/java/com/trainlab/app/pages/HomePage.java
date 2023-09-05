@@ -2,6 +2,7 @@ package com.trainlab.app.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import com.trainlab.app.App;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -16,20 +17,20 @@ public class HomePage extends BasePage {
         super(pageUrl);
     }
 
-//    public RegisterPage clickStartButton() {
-//        startButton.click();
-//
-//        registerPage = Selenide.page(RegisterPage.class);
-//        registerPage.waitPage();
-//        return registerPage;
-//    }
+    public RegisterPage clickStartButton() {
+        startButton.click();
 
-//    public LoginPage clickSignInButton() {
-//        signInButton.click();
-//
-//        loginPage = page(LoginPage.class);
-//        loginPage.waitPage();
-//        return loginPage;
-//    }
+        registerPage = page(RegisterPage.class);
+        registerPage.waitPage();
+        return registerPage;
+    }
+
+    public LoginPage clickSignInButton() {
+        signInButton.click();
+
+        loginPage = page(LoginPage.class);
+        loginPage.waitPage();
+        return loginPage;
+    }
 
 }

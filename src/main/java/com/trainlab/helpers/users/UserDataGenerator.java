@@ -16,8 +16,8 @@ public class UserDataGenerator {
     private String password;
 
     public UserDataGenerator() {
-        this.email = "subbotin1200@gmail.com";
-        this.userName = "subbotin1200";
+        this.email = "subbotin12000@gmail.com";
+        this.userName = "subbotin12000";
         this.password = "qqqqqqQ1";
     }
 }

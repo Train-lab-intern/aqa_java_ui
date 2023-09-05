@@ -2,6 +2,7 @@ package com.trainlab.app.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import com.trainlab.app.App;
 import com.trainlab.app.AppConfig;
 import com.trainlab.helpers.Trim;
 import org.openqa.selenium.By;
@@ -11,9 +12,9 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class BasePage {
 
-//    protected HomePage homePage;
-//    protected RegisterPage registerPage;
-//    protected LoginPage loginPage;
+    public HomePage homePage;
+    public RegisterPage registerPage;
+    public LoginPage loginPage;
 
     private static final SelenideElement logo = $(By.xpath("//img[@alt='Logo']"));
 
