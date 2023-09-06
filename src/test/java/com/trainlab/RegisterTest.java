@@ -22,8 +22,8 @@ public class RegisterTest extends A_BaseTest {
         app.homePage.clickStartButton();
         app.registerPage.registrationUser(getUser(VALID_USER));
 
-        String expectedNotificationMessage = "На адрес Вашей электронной почты было отправлено письмо.";
         String actualNotificationMessage = app.registerPage.getTextNotificationMessage();
+        String expectedNotificationMessage = "На адрес Вашей электронной почты было отправлено письмо.";
 
         assertTrue(actualNotificationMessage.contains(expectedNotificationMessage));
 
@@ -37,8 +37,8 @@ public class RegisterTest extends A_BaseTest {
         app.homePage.clickStartButton();
         app.registerPage.registrationUser(getUserWithInvalidPassword(4,5));
 
-        String expectedNotificationMessage = "Пароль вводится латинскими буквами";
         String actualNotificationMessage = app.registerPage.getTextRegistrationErrors();
+        String expectedNotificationMessage = "Пароль вводится латинскими буквами";
 
         assertTrue(actualNotificationMessage.contains(expectedNotificationMessage));
 
