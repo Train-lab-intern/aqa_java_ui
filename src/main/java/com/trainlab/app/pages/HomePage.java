@@ -17,6 +17,10 @@ public class HomePage extends BasePage {
         super(pageUrl);
     }
 
+        public void clickStartButton() {
+        startButton.click();
+    }
+
 //    public RegisterPage clickStartButton() {
 //        startButton.click();
 //
@@ -24,7 +28,7 @@ public class HomePage extends BasePage {
 //        registerPage.waitPage();
 //        return registerPage;
 //    }
-
+//
 //    public LoginPage clickSignInButton() {
 //        signInButton.click();
 //
