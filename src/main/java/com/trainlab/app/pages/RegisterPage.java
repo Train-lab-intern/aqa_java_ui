@@ -22,18 +22,18 @@ public class RegisterPage extends BasePage {
         super(pageUrl);
     }
 
-    public RegisterPage registrationUser(UserDataGenerator userData) {
-        setFieldEmail(userData.getEmail());
-        setFieldUserName(userData.getUserName());
-        setFieldPassword(userData.getPassword());
-        setFieldPasswordConfirm(userData.getPassword());
-        clickRegisterButton();
-
-        registerPage = page(RegisterPage.class);
-        registerPage.waitPage();
-        return registerPage;
-
-    }
+//    public RegisterPage registrationUser(UserDataGenerator userData) {
+//        setFieldEmail(userData.getEmail());
+//        setFieldUserName(userData.getUserName());
+//        setFieldPassword(userData.getPassword());
+//        setFieldPasswordConfirm(userData.getPassword());
+//        clickRegisterButton();
+//
+//        registerPage = page(RegisterPage.class);
+//        registerPage.waitPage();
+//        return registerPage;
+//
+//    }
 
     private void setFieldEmail(String email) {
         fieldEmail.setValue(email);

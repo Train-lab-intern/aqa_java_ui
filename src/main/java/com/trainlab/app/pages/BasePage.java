@@ -12,10 +12,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class BasePage {
 
-    public HomePage homePage;
-    public RegisterPage registerPage;
-    public LoginPage loginPage;
-
     private static final SelenideElement logo = $(By.xpath("//img[@alt='Logo']"));
 
     protected String pageUrl;

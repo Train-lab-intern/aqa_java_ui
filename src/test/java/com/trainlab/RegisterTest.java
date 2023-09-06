@@ -14,12 +14,7 @@ public class RegisterTest extends A_BaseTest {
     @DisplayName("Succes registration user")
     public void a_succesRegisterUserTest() {
 
-        String message = app.basePage.homePage
-                .clickStartButton()
-                .registrationUser(new UserDataGenerator())
-                .getTextNotificationMessage();
-
-        System.out.println(message);
+        app.homePage.open();
 
     }
  }

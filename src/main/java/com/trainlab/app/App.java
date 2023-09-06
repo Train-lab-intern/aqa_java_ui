@@ -7,16 +7,14 @@ import com.trainlab.app.pages.RegisterPage;
 
 public class App {
 
-//    public HomePage homePage;
-//    public RegisterPage registerPage;
-//    public LoginPage loginPage;
-
-    public BasePage basePage = new BasePage("");
+    public HomePage homePage;
+    public RegisterPage registerPage;
+    public LoginPage loginPage;
 
     public App() {
-        basePage.homePage = PageBuilder.buildHomePage();
-        basePage.registerPage = PageBuilder.buildRegisterPage();
-        basePage.loginPage = PageBuilder.buildLoginPage();
+        homePage = PageBuilder.buildHomePage();
+        registerPage = PageBuilder.buildRegisterPage();
+        loginPage = PageBuilder.buildLoginPage();
     }
 
 }

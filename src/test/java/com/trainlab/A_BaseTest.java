@@ -22,8 +22,6 @@ class A_BaseTest {
 
         app = new App();
 
-        app.basePage.homePage.open();
-
 //        logger = LogManager.getLogger("");
 //        DOMConfigurator.configure("src/main/resources/log4j.xml");
     }

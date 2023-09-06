@@ -17,20 +17,20 @@ public class HomePage extends BasePage {
         super(pageUrl);
     }
 
-    public RegisterPage clickStartButton() {
-        startButton.click();
+//    public RegisterPage clickStartButton() {
+//        startButton.click();
+//
+//        registerPage = page(RegisterPage.class);
+//        registerPage.waitPage();
+//        return registerPage;
+//    }
 
-        registerPage = page(RegisterPage.class);
-        registerPage.waitPage();
-        return registerPage;
-    }
-
-    public LoginPage clickSignInButton() {
-        signInButton.click();
-
-        loginPage = page(LoginPage.class);
-        loginPage.waitPage();
-        return loginPage;
-    }
+//    public LoginPage clickSignInButton() {
+//        signInButton.click();
+//
+//        loginPage = page(LoginPage.class);
+//        loginPage.waitPage();
+//        return loginPage;
+//    }
 
 }
