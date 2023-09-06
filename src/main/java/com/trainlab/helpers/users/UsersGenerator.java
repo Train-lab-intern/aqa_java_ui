@@ -5,7 +5,7 @@ import com.trainlab.api.model.UserType;
 
 import java.util.Locale;
 
-public class UserGenerator {
+public class UsersGenerator {
 
     private static final Faker faker = new Faker(new Locale("en"));
     private static final User user = new User();

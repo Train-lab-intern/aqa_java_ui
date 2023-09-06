@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import static com.trainlab.helpers.users.UserGenerator.getRandomEmail;
-import static com.trainlab.helpers.users.UserGenerator.getRandomValidPassword;
+import static com.trainlab.helpers.users.UsersGenerator.getRandomEmail;
+import static com.trainlab.helpers.users.UsersGenerator.getRandomValidPassword;
 
 
 @Setter

@@ -6,8 +6,8 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import static com.trainlab.api.model.UserType.VALID_USER;
-import static com.trainlab.helpers.users.UserGenerator.getUser;
-import static com.trainlab.helpers.users.UserGenerator.getUserWithInvalidPassword;
+import static com.trainlab.helpers.users.UsersGenerator.getUser;
+import static com.trainlab.helpers.users.UsersGenerator.getUserWithInvalidPassword;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
