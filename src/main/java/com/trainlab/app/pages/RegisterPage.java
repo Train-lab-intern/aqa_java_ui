@@ -34,19 +34,6 @@ public class RegisterPage extends BasePage {
 
     }
 
-//    public RegisterPage registrationUser(UserDataGenerator userData) {
-//        setFieldEmail(userData.getEmail());
-//        setFieldUserName(userData.getUserName());
-//        setFieldPassword(userData.getPassword());
-//        setFieldPasswordConfirm(userData.getPassword());
-//        clickRegisterButton();
-//
-//        registerPage = page(RegisterPage.class);
-//        registerPage.waitPage();
-//        return registerPage;
-//
-//    }
-
     private void setFieldEmail(String email) {
         fieldEmail.setValue(email);
     }

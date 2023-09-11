@@ -1,12 +1,9 @@
 package com.trainlab.app.pages;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import com.trainlab.app.App;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.page;
 
 public class HomePage extends BasePage {
 
@@ -17,24 +14,25 @@ public class HomePage extends BasePage {
         super(pageUrl);
     }
 
-        public void clickStartButton() {
+    public void openRegisterPage(String nameButton) {
+        if (nameButton.equals("startButton")) {
+            clickStartButton();
+        } else if (nameButton.equals("signInButton")) {
+            openLoginPage();
+            LoginPage.openRegisterPage();
+        }
+    }
+
+    public void openLoginPage() {
+        clickSignInButton();
+    }
+
+    private void clickStartButton() {
         startButton.click();
     }
 
-//    public RegisterPage clickStartButton() {
-//        startButton.click();
-//
-//        registerPage = page(RegisterPage.class);
-//        registerPage.waitPage();
-//        return registerPage;
-//    }
-//
-//    public LoginPage clickSignInButton() {
-//        signInButton.click();
-//
-//        loginPage = page(LoginPage.class);
-//        loginPage.waitPage();
-//        return loginPage;
-//    }
+    private void clickSignInButton() {
+        signInButton.click();
+    }
 
 }

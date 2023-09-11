@@ -1,6 +1,5 @@
 package com.trainlab.app;
 
-import com.trainlab.app.pages.BasePage;
 import com.trainlab.app.pages.HomePage;
 import com.trainlab.app.pages.LoginPage;
 import com.trainlab.app.pages.RegisterPage;
