@@ -2,6 +2,7 @@ package com.trainlab.app;
 
 import com.trainlab.app.pages.HomePage;
 import com.trainlab.app.pages.LoginPage;
+import com.trainlab.app.pages.ProfilePage;
 import com.trainlab.app.pages.RegisterPage;
 
 public class PageBuilder {
@@ -16,6 +17,10 @@ public class PageBuilder {
 
     public static LoginPage buildLoginPage() {
         return new LoginPage("");
+    }
+
+    public static ProfilePage buildProfilePage() {
+        return new ProfilePage("");
     }
 
 }

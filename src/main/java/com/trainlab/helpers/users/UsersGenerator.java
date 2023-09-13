@@ -1,6 +1,7 @@
 package com.trainlab.helpers.users;
 
 import com.github.javafaker.Faker;
+import com.trainlab.api.model.User;
 import com.trainlab.api.model.UserType;
 
 import java.util.Locale;

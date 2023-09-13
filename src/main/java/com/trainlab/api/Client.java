@@ -7,7 +7,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
-import static com.trainlab.app.AppConfig.BASE_URL;
+import static com.trainlab.app.AppConfig.TEST_BASE_URL;
 
 public class Client {
 
@@ -16,7 +16,7 @@ public class Client {
         RestAssured.filters(new ResponseLoggingFilter());
 
         return new RequestSpecBuilder()
-                .setBaseUri(BASE_URL)
+                .setBaseUri(TEST_BASE_URL)
                 .setAccept(ContentType.JSON)
                 .setContentType(ContentType.JSON)
                 .log(LogDetail.ALL)

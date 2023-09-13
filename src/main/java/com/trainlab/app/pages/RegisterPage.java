@@ -1,7 +1,7 @@
 package com.trainlab.app.pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.trainlab.helpers.users.User;
+import com.trainlab.api.model.User;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.visible;

@@ -14,14 +14,14 @@ import static org.junit.Assert.assertTrue;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(Parameterized.class)
-public class RegisterTest extends A_BaseTest {
+public class RegistrationUserTest extends A_BaseTest {
 
     private final String buttonChoice;
 
     private static final String START_BUTTON = "startButton";
     private static final String SIGN_IN_BUTTON = "signInButton";
 
-    public RegisterTest(String buttonChoice) {
+    public RegistrationUserTest(String buttonChoice) {
         this.buttonChoice = buttonChoice;
     }
 
