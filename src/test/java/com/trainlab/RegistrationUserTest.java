@@ -1,5 +1,6 @@
 package com.trainlab;
 
+import com.trainlab.helpers.users.UsersGenerator;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -7,9 +8,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.junit.runners.Parameterized;
 
-import static com.trainlab.api.model.UserType.VALID_USER;
-import static com.trainlab.helpers.users.UsersGenerator.getUser;
-import static com.trainlab.helpers.users.UsersGenerator.getUserWithInvalidPassword;
 import static org.junit.Assert.assertTrue;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -39,7 +37,7 @@ public class RegistrationUserTest extends A_BaseTest {
 
         app.homePage.open();
         app.homePage.openRegisterPage(buttonChoice);
-        app.registerPage.registrationUser(getUser(VALID_USER));
+        app.registerPage.registrationUser(new UsersGenerator().getValidUser());
 
         String actualNotificationMessage = app.registerPage.getTextNotificationMessage();
         String expectedNotificationMessage = "На адрес Вашей электронной почты было отправлено письмо.";
@@ -54,7 +52,7 @@ public class RegistrationUserTest extends A_BaseTest {
 
         app.homePage.open();
         app.homePage.openRegisterPage(buttonChoice);
-        app.registerPage.registrationUser(getUserWithInvalidPassword(4,5));
+        app.registerPage.registrationUser(new UsersGenerator().getUserWithInvalidPassword(4, 5));
 
         String actualNotificationMessage = app.registerPage.getTextRegistrationErrors();
         String expectedNotificationMessage = "Пароль вводится латинскими буквами";
