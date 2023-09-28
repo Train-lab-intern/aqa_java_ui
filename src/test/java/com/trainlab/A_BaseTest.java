@@ -18,7 +18,7 @@ class A_BaseTest {
         Driver.initDriver();
 
         app = new App();
-        userGenerator = new UsersGenerator();
+//        userGenerator = new UsersGenerator();
     }
 
     @After
